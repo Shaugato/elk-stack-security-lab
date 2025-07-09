@@ -1,0 +1,13 @@
+.vagrant/
+*.log
+*.box
+*.iso
+*.retry
+*.tar
+*.zip
+*.bak
+*.swp
+*.tmp
+*.pcap
+*.pid
+.idea/
