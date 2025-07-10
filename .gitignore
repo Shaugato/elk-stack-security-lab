@@ -11,3 +11,5 @@
 *.pcap
 *.pid
 .idea/
+*.tar.gz
+GeoLite2-*.tar.gz
