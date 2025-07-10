@@ -1,0 +1,16 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    paths:
+      - /var/log/apache2/access.log
+
+output.logstash:
+  hosts: ["192.168.56.11:5044"]  # Ubuntu VM's IP
+
+setup.kibana:
+  host: "192.168.56.11:5601"
+
+processors:
+  - add_host_metadata: ~
+  - add_cloud_metadata: ~
+  - add_docker_metadata: ~

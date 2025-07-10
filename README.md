@@ -41,6 +41,18 @@ This project sets up a security-focused ELK (Elasticsearch, Logstash, Kibana) st
 \- Grok filters for Apache log parsing
 
 
+## ⚙️ Config Files
+
+### `logstash/apache.conf`
+Defines the pipeline to parse Apache logs using `grok`, enrich with GeoIP, and index into Elasticsearch.
+
+### `filebeat/filebeat.yml`
+Collects logs from `/var/log/apache2/access.log` on Kali and forwards them to Logstash at `192.168.56.11:5044`.
+
+
+
+
+
 
 \## 🚀 Getting Started
 
